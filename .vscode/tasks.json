@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Save Food Project",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "save_food.cpp",
+                "-o",
+                "save_food.exe",
+                "-lfreeglut",
+                "-lopengl32",
+                "-lglu32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compiles save_food.cpp into save_food.exe"
+        }
+    ]
+}
